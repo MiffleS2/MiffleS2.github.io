@@ -39,4 +39,5 @@ ol{
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  list-style-position: inside;
 }
