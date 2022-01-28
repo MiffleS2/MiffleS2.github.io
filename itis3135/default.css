@@ -12,6 +12,7 @@ a:visited{
 }
 .center{
   text-align: center;
+  list-style-position: inside;
 }
 .font-size{
   font-size: large;
