@@ -39,12 +39,9 @@ ol{
   display: table;
   margin-left: auto;
   margin-right: auto;
-  list-style-position: inside;
 }
 ul{
   display: table;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  list-style-position: inside;
+  margin: 0 auto;
 }
