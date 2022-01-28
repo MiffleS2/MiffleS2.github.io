@@ -21,3 +21,17 @@ a:visited{
   font-size: larger;
   font-family: sans-serif;
 }
+body{
+  align:center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+p{
+  align:center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
