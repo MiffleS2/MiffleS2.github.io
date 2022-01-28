@@ -36,13 +36,14 @@ p{
   margin-right: 100px;
 }
 ol{
-  display: inline-block;
+  display: table;
   margin-left: auto;
   margin-right: auto;
   list-style-position: inside;
 }
 ul{
-  display: inline-block;
+  display: table;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   list-style-position: inside;
