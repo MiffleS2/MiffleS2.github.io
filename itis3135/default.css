@@ -12,7 +12,6 @@ a:visited{
 }
 .center{
   text-align: center;
-  list-style-position: inside;
 }
 .font-size{
   font-size: large;
@@ -35,4 +34,9 @@ p{
   margin-bottom: 100px;
   margin-left: 100px;
   margin-right: 100px;
+}
+ol{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
