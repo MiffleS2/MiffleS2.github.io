@@ -36,6 +36,19 @@ body{
   margin-left: 100px;
   margin-right: 100px;
 }
+.form{
+  display: block;
+  text-align: center;
+}
+form{
+  background-color: rgb(79, 226, 79);
+  padding: 20px;
+  display: inline-block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+  text-align:left;
+}
 p{
   align:center;
   margin-top: 50px;
@@ -104,4 +117,40 @@ table tr:nth-child(even) {
   text-align: center;
   padding: 7px;
   background-color: rgb(102, 52, 52);
+}
+
+input[type=text]{
+  align:center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px;
+  background-color: rgb(238, 135, 97);
+  font-family: sans-serif;
+  color:white;
+}
+input[type=number]{
+  align:center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px;
+  background-color: rgb(238, 135, 97);
+  font-family: sans-serif;
+  color:white;
+}
+input[type=email]{
+  align:center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px;
+  background-color: rgb(238, 135, 97);
+  font-family: sans-serif;
+  color:white;
+}
+input[type=submit]{
+  background-color: rgb(59, 59, 59);
+  color:coral;
+}
+input[type=reset]{
+  background-color: rgb(59, 59, 59);
+  color:coral;
 }
