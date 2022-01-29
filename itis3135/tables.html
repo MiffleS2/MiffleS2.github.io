@@ -184,11 +184,14 @@
     <a href="https://validator.w3.org/check?uri=" id="validation_link_html">
       <img src="images/button_validation_html5.png" alt="Link to HTML validator">
     </a>
-    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    
     <a href="https://jigsaw.w3.org/css-validator/check/referer?uri=" id="validation_link_css">
       <img src="images/button_validation_css.png" alt="Link to css validator">
     </a>
-    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    <script>
+      document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
   </p>
     <p>
       <a href="">Designed By: Hanson Designs LLC ©2022.</a>
