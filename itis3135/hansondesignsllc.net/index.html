@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    h1{
+      margin-left: 700px;
+      color:blue;
+    }
+    h2{
+      margin-left: 750px;
+      color:blue;
+    }
+  </style>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +17,26 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <main>
+    <h1>
+      Welcome to Hanson Designs LLC
+    </h1>
+    <h2>
+      Company Updates Will Be Posted Here
+    </h2>
+  </main>
 </body>
+<p>
+  <a href="https://validator.w3.org/check?uri=" id="validation_link_html">
+    <img src="images/button_validation_html5.png" alt="Link to HTML validator">
+  </a>
+
+  <a href="https://jigsaw.w3.org/css-validator/check/referer?uri=" id="validation_link_css">
+    <img src="images/button_validation_css.png" alt="Link to css validator">
+  </a>
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+</p>
 </html>
