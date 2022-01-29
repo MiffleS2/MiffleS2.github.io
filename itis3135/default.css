@@ -4,6 +4,10 @@
 .coral-text{
   color: coral;
 }
+.background-brown{
+  background-color: rgb(163, 136, 86);
+  color: black;
+}
 a:link{
   color: rgb(67, 221, 149);
 }
@@ -21,6 +25,10 @@ a:visited{
   font-size: larger;
   font-family: sans-serif;
 }
+h1, h2, h3{
+  text-align: center;
+  color: coral;
+}
 body{
   align:center;
   margin-top: 50px;
@@ -37,8 +45,63 @@ p{
 }
 
 ul{
+  font-family:sans-serif;
+  color:coral;
   display: table;
   text-align: left;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   list-style-position: inside;
+}
+/*table, td{
+  font-family:sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  padding: 7px;
+  background-color: rgb(104, 102, 98);
+  color:rgb(184, 240, 55);
+}
+*/
+th{
+  font-family:sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  padding: 7px;
+  background-color: rgb(163, 136, 86);
+  color:rgb(0, 0, 0);
+}
+table{
+  font-family:sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  padding: 7px;
+  color: rgb(184, 240, 55);
+}
+td{
+  font-family:sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  padding: 7px;
+}
+table tr:nth-child(even) {
+  font-family:sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  padding: 7px;
+  background-color: rgb(102, 52, 52);
 }
