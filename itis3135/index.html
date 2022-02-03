@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="default.css">
 
 <head>
+  <link rel="stylesheet" href="default.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chris Hanson | ITIS 3135 | Coral Hampster</title>
-  <h1 class="coral-text center">
-    Chris Hanson | ITIS 3135 | Coral Hampster
-  </h1>
-  <div class="center coral-text">
+</head>
+
+<body>
+  <header>
+    <h1>
+      Chris Hanson | ITIS 3135 | Coral Hampster
+    </h1>
+
     <nav>
       <a href="index.html" target="blank">Home</a>
       ||
@@ -24,18 +28,20 @@
       ||
       <a href="forms.html" target="blank">Forms</a>
     </nav>
-  </div>
-</head>
 
-<body class="center coral-text">
+    <hr>
+  </header>
   <main>
+    <h2>
+      Introduction
+    </h2>
     <figure>
       <img src="images/Chris.jpg" alt="Me on my study abroad in Korea" width="350" height="350">
       <figcaption>
         Me on my study abroad in Korea
       </figcaption>
     </figure>
-    <ul class="font-size">
+    <ul>
       <li>Personal Background: Born in Florida, raised in NC. I'm a Senior at UNCC and I just got back from studying
         abroad in Korea for a semester!</li>
       <li>Professional Background: Little to no work experience yet, hoping to find an internship soon.</li>
@@ -53,6 +59,7 @@
     </ul>
   </main>
   <footer>
+    <hr>
     <nav>
       <a href="https://www.codecademy.com/profiles/chanson7" target="blank">Codecademy</a>
       ||
@@ -71,16 +78,19 @@
       ||
       <a href="https://www.linkedin.com/in/chris-hanson-3a4260139/" target="blank">LinkedIn</a>
     </nav>
-    <a href="https://validator.w3.org/check?uri=" id="validation_link_html">
-      <img src="images/button_validation_html5.png" alt="Link to HTML validator">
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer?uri=" id="validation_link_css">
-      <img src="images/button_validation_css.png" alt="Link to css validator">
-    </a>
-    <script>
-      document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-      document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
+    <p>
+      <a href="https://validator.w3.org/check?uri=" id="validation_link_html">
+        <img src="images/button_validation_html5.png" alt="Link to HTML validator">
+      </a>
+
+      <a href="https://jigsaw.w3.org/css-validator/check/referer?uri=" id="validation_link_css">
+        <img src="images/button_validation_css.png" alt="Link to css validator">
+      </a>
+      <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+      </script>
+    </p>
     <p>
       <a href="hansondesignsllc.net/">Designed By: Hanson Designs LLC ©2022.</a>
     </p>
