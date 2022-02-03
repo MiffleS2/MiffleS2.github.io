@@ -29,7 +29,8 @@ header, footer{
   text-align: center;
 }
 form{
-  background-color: rgb(79, 226, 79);
+  background-color: #B38D97;
+  color: #283845;
   padding: 20px;
   display: inline-block;
   margin-left:auto;
