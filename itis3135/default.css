@@ -4,13 +4,13 @@
   color: black;
 }
 a{
-  color: rgb(67, 221, 149);
+  color: rgb(164, 192, 111);
 }
 a:visited{
-  color:rgb(53, 212, 212);
+  color:rgb(68, 180, 64);
 }
 a:hover{
-  color:red;
+  color:rgb(86, 142, 214);
 }
 body{
   text-align: center;
