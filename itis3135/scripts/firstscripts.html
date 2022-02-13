@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="default.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chris Hanson | ITIS 3135 | Coral Hampster</title>
+  <title>First Scripts</title>
+  <script src="defaultscripts.js"></script>
+  <link rel="stylesheet" href="/itis3135/default.css">
 </head>
+
 
 <body>
   <header>
     <h1>
       Chris Hanson | ITIS 3135 | Coral Hampster
     </h1>
-
     <nav>
       <a href="index.html">Home</a>
       ||
@@ -32,36 +33,44 @@
       ||
       <a href="/itis3135/scripts/firstscripts.html" target="blank">First Scripts</a>
     </nav>
-
     <hr>
   </header>
   <main>
     <h2>
-      Introduction
+      First Scripts
     </h2>
-    <figure>
-      <img src="images/Chris.jpg" alt="Me on my study abroad in Korea" width="350" height="350">
-      <figcaption>
-        Me on my study abroad in Korea
-      </figcaption>
-    </figure>
-    <ul>
-      <li>Personal Background: Born in Florida, raised in NC. I'm a Senior at UNCC and I just got back from studying
-        abroad in Korea for a semester!</li>
-      <li>Professional Background: Little to no work experience yet, hoping to find an internship soon.</li>
-      <li>Academic Background: Attended CPCC for 2 years, now attending UNCC full time.</li>
-      <li>Background in Web Design: Little to none.</li>
-      <li>Primary Computer Platform: Windows</li>
-      <li>Courses I'm Taking:</li>
-      <ul>
-        <li>ITCS 3160: Database Design & Implementation</li>
-        <li>ITIS 3135: Web App Design & Development</li>
-        <li>MATH 2164: Matrices & Linear Algebra</li>
-        <li>ITSC 3688: Computers & Their Impact on Society</li>
-      </ul>
-      <li>Interesting Thing to Remember me by: I have been across the US and to 4 different countries!</li>
-    </ul>
+    <h3 id="currentDate">
+      <script>
+        getDate();
+      </script>
+    </h3>
+
+
+    <form name="information" onsubmit="formCheck()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="doing">How are you doing?</label>
+      <input type="text" id="doing" name="doing">
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <p id="content"></p>
+
+
+
+    <button onclick="alertUser()">Script Test</button>
+
+    <button onclick="getEmail()">Get Company Email</button>
+    <button onclick="getPhone()">Get Company Phone #</button>
+    <button onclick="tellJoke()">Tell a Joke</button>
+    <button onclick="companyOwn()">Owner of Company is</button>
+    <button onclick="companyAge()">How old is the Company?</button>
   </main>
+
+
+
   <footer>
     <hr>
     <nav>
@@ -84,11 +93,11 @@
     </nav>
     <p>
       <a href="https://validator.w3.org/check?uri=" id="validation_link_html">
-        <img src="images/button_validation_html5.png" alt="Link to HTML validator">
+        <img src="/itis3135/images/button_validation_html5.png" alt="Link to HTML validator">
       </a>
 
       <a href="https://jigsaw.w3.org/css-validator/check/referer?uri=" id="validation_link_css">
-        <img src="images/button_validation_css.png" alt="Link to css validator">
+        <img src="/itis3135/images/button_validation_css.png" alt="Link to css validator">
       </a>
       <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
@@ -100,5 +109,6 @@
     </p>
   </footer>
 </body>
+
 
 </html>
