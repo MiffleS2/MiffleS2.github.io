@@ -1,9 +1,17 @@
 const salaries = [250000, 150000, 150000, 90000, 50000, 55000, 75000];
 const person = ['Alex Heart', 'Mindy Apple', 'Eric Warren', 'Daniel Hazan', 'Joe Johnson', 'Chris Stevens', 'Josh Peck'];
 
-function addSalary() {
+function addSalary(e) {
+  e.preventDefault();
   let name = document.forms["information"]["name"].value;
   let sala = document.forms["information"]["salary"].value;
+
+  if(name == ""){
+    alert("Enter Name!")
+  }
+  if(sala == ""){
+    alert("Enter Salary!")
+  }
 
   salaries.push(sala);
   person.push(name);

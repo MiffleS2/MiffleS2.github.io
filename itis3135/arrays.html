@@ -43,7 +43,7 @@
       Arrays
     </h2>
 
-    <form name="information" onsubmit="addSalary()">
+    <form name="information" onsubmit="addSalary(event)">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
 
@@ -51,11 +51,10 @@
       <input type="number" id="salary" name="salary">
 
       <input type="submit" value="Submit">
-    </form>
-    <div id="addSal"></div>
+    </form><br>
 
     <button onclick="displayResults()">Display Results</button>
-    <div id="results"></div>
+    <div id="results"></div><br>
 
     <button onclick="displaySalary()">Display Salary</button>
     <table id="result_table"></table>
