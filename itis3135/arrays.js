@@ -1,5 +1,5 @@
-let salaries = [250000, 150000, 150000, 90000, 50000, 55000, 75000];
-let person = ['Alex Heart', 'Mindy Apple', 'Eric Warren', 'Daniel Hazan', 'Joe Johnson', 'Chris Stevens', 'Josh Peck'];
+const salaries = [250000, 150000, 150000, 90000, 50000, 55000, 75000];
+const person = ['Alex Heart', 'Mindy Apple', 'Eric Warren', 'Daniel Hazan', 'Joe Johnson', 'Chris Stevens', 'Josh Peck'];
 
 function addSalary() {
   let name = document.forms["information"]["name"].value;
