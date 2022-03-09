@@ -5,23 +5,23 @@ function addSalary(){
 
 }
 function displayResults(){
-  var maxSal;
-  var averageSal;
-  var summation;
+  let maxSal = 0;
+  let averageSal = 0;
+  let summation = 0;
 
-  for(var i = 0; i < salaries.length(); i++){
+  for(var i = 0; i < salaries.length; i++){
     summation += salaries[i];
 
     if(salaries[i] > maxSal){
       maxSal = salaries[i];
     }
   }
-  averageSal = summation/salaries.length()-1;
-  document.getElementById("result").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p> <h2>Average Salary<h2> <p>${averageSal}+</p>`
+  averageSal = summation/salaries.length-1;
+  document.getElementById("result").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p> <h2>Average Salary<h2> <p>${averageSal}+</p>`;
 }
 function displaySalary(){
   document.getElementById("result_table").innerHTML=`<tr><th>Name</th><tr><th>Salary</th></tr>`;
   for(var i = 0; i < person.length(); i++){
-    document.getElementById("result_table").innerHTML += `<tr><td>${person[i]}</td></tr><tr><td>${salaries[i]}</td></tr>`
+    document.getElementById("result_table").innerHTML += `<tr><td>${person[i]}</td></tr><tr><td>${salaries[i]}</td></tr>`;
   }
 }
