@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="default.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="arrays.js"></script>
-    <title>Chris Hanson | ITIS 3135 | Coral Hampster | Arrays</title>
-  </head>
-  
-  <body>
-    <header>
-      <h1>
-        Chris Hanson | ITIS 3135 | Coral Hampster
-      </h1>
-      <nav>
-        <a href="index.html">Home</a>
-        ||
-        <a href="contract.html">Contract</a>
-        ||
-        <a href="introduction.html">Introduction</a>
-        ||
-        <a href="https://webpages.uncc.edu/chanson7.html">UNCC Homepage</a>
-        || 
-        <a href="tables.html" target="blank">HTML Tables</a>
-        ||
-        <a href="forms.html" target="blank">Forms</a>
-        ||
-        <a href="website_evaluations.html" target="blank">Website Evaluations</a>
-        ||
-        <a href="/itis3135/scripts/firstscripts.html" target="blank">First Scripts</a>
-      </nav>
-      <hr>
-    </header>
+
+<head>
+  <link rel="stylesheet" href="default.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="arrays.js"></script>
+  <title>Chris Hanson | ITIS 3135 | Coral Hampster | Arrays</title>
+</head>
+
 <body>
-  <h2>
-    Arrays
-  </h2>
+  <header>
+    <h1>
+      Chris Hanson | ITIS 3135 | Coral Hampster
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      ||
+      <a href="contract.html">Contract</a>
+      ||
+      <a href="introduction.html">Introduction</a>
+      ||
+      <a href="https://webpages.uncc.edu/chanson7.html">UNCC Homepage</a>
+      ||
+      <a href="tables.html" target="blank">HTML Tables</a>
+      ||
+      <a href="forms.html" target="blank">Forms</a>
+      ||
+      <a href="website_evaluations.html" target="blank">Website Evaluations</a>
+      ||
+      <a href="/itis3135/scripts/firstscripts.html" target="blank">First Scripts</a>
+    </nav>
+    <hr>
+  </header>
 
-  <button onclick="displayResults()">Display Results</button>
-  <div id = "results"></div>
+  <body>
+    <h2>
+      Arrays
+    </h2>
+
+    <button onclick="displayResults()">Display Results</button>
+    <div id="results"></div>
 
 
-  <button onclick="displaySalary()">Display Salary</button>
-  <table id ="result_table"></table>
+    <button onclick="displaySalary()">Display Salary</button>
+    <table id="result_table"></table>
 
-  <div id = "addSal"></div>
+    <form name="information" onsubmit="addSalary()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
 
-  
-</body>
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary">
+
+      <input type="submit" value="Submit">
+    </form>
+    <div id="addSal"></div>
+
+
+  </body>
+
 </html>
