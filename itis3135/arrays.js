@@ -16,7 +16,7 @@ function displayResults() {
       maxSal = salaries[i];
     }
   }
-  averageSal = summation / salaries.length - 1;
+  averageSal = summation / salaries.length;
   document.getElementById("results").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p> <h2>Average Salary<h2> <p>${averageSal}</p>`;
 }
 function displaySalary() {
