@@ -1,27 +1,27 @@
 let salaries = [250000, 150000, 150000, 90000, 50000, 55000, 75000];
 let person = ['Alex Heart', 'Mindy Apple', 'Eric Warren', 'Daniel Hazan', 'Joe Johnson', 'Chris Stevens', 'Josh Peck'];
 
-function addSalary(){
+function addSalary() {
 
 }
-function displayResults(){
+function displayResults() {
   let maxSal = 0;
   let averageSal = 0;
   let summation = 0;
 
-  for(var i = 0; i < salaries.length; i++){
+  for (var i = 0; i < salaries.length; i++) {
     summation += salaries[i];
 
-    if(salaries[i] > maxSal){
+    if (salaries[i] > maxSal) {
       maxSal = salaries[i];
     }
   }
-  averageSal = summation/salaries.length-1;
-  document.getElementById("result").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p> <h2>Average Salary<h2> <p>${averageSal}+</p>`;
+  averageSal = summation / salaries.length - 1;
+  document.getElementById("results").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p> <h2>Average Salary<h2> <p>${averageSal}</p>`;
 }
-function displaySalary(){
-  document.getElementById("result_table").innerHTML=`<tr><th>Name</th><tr><th>Salary</th></tr>`;
-  for(var i = 0; i < person.length(); i++){
+function displaySalary() {
+  document.getElementById("result_table").innerHTML = `<tr><th>Name</th><tr><th>Salary</th></tr>`;
+  for (var i = 0; i < person.length(); i++) {
     document.getElementById("result_table").innerHTML += `<tr><td>${person[i]}</td></tr><tr><td>${salaries[i]}</td></tr>`;
   }
 }
