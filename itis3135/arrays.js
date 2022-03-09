@@ -20,8 +20,8 @@ function displayResults() {
   document.getElementById("results").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p> <h2>Average Salary<h2> <p>${averageSal}</p>`;
 }
 function displaySalary() {
-  document.getElementById("result_table").innerHTML = `<tr><th>Name</th><tr><th>Salary</th></tr>`;
-  for (var i = 0; i < person.length(); i++) {
-    document.getElementById("result_table").innerHTML += `<tr><td>${person[i]}</td></tr><tr><td>${salaries[i]}</td></tr>`;
+  document.getElementById("result_table").innerHTML = `<tr><th>Name</th><th>Salary</th></tr>`;
+  for (var i = 0; i < person.length; i++) {
+    document.getElementById("result_table").innerHTML += `<tr><td>${person[i]}</td><td>${salaries[i]}</td></tr>`;
   }
 }
