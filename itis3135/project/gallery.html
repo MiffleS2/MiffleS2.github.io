@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--- Used https://getbootstrap.com AND murach slides -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
   <link rel="stylesheet" href="default.css">
   <script src=" https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="/project/scripts.js"></script>
   <title>
     Eric Warren Glass Blowing | Gallery
@@ -39,21 +40,16 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-sm-6">
-            <img id="slide" src="/images/eric3.jpg">
-            <div id="slides">
-              <img src="/images/eric1.png">
-              <img src="/images/eric2.png">
-              <img src="/images/eric4.jpg">
-              <img src="/images/eric5.jpg">
-              <img src="/images/eric6.jpg">
-            </div>
-          </div>
+    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+      <img id="slide" src="/images/eric3.jpg">
+      <div id="slides">
+        <img src="/images/eric1.png">
+        <img src="/images/eric2.png">
+        <img src="/images/eric4.jpg">
+        <img src="/images/eric5.jpg">
+        <img src="/images/eric6.jpg">
       </div>
-  </div>
-    
+    </div>
   </main>
 
   <footer class="mt-auto bg-dark text-center">
@@ -64,4 +60,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
