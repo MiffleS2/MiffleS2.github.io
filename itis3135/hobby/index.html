@@ -19,7 +19,34 @@
       line-height: 28px;
       text-align: center;
     }
-    section{}
+
+    h1,
+    h2,
+    h3 {
+      margin-left: 100px;
+      margin-right: 100px;
+      text-align: center;
+    }
+
+    .home {
+      display: block;
+    }
+
+    section {
+      display: none;
+    }
+
+    a {
+      color: rgb(69, 224, 217);
+    }
+
+    a:visited {
+      color: rgb(68, 180, 64);
+    }
+
+    a:hover {
+      color: rgb(201, 55, 206);
+    }
   </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,15 +54,64 @@
   <title>Chris Hanson | ITIS 3135 | Midterm</title>
 </head>
 
+<!---THIS SCRIPT WAS TAKEN FROM W3 SCHOOLS: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp THIS IS NOT MY WORK-->
+<script>
+  function showWho() {
+    var x = document.getElementById("about");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function showTime() {
+    var x = document.getElementById("time");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function showDownload() {
+    var x = document.getElementById("download");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function showHow() {
+    var x = document.getElementById("how");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function showWhy() {
+    var x = document.getElementById("why");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  } 
+</script>
+
 <body>
   <header>
     <h1>
       Chris Hanson | ITIS 3135 | Midterm
     </h1>
     <hr>
+    <button onclick="showWho()">Show About Me Page</button>
+    <button onclick="showTime()">Show Best Time Page</button>
+    <button onclick="showDownload()">Show How to Download Page</button>
+    <button onclick="showHow()">Show How to Play Page</button>
+    <button onclick="showWhy()">Show Why Play Page</button>
   </header>
   <main>
-    <section>
+    <section id="home">
       <h2>
         Home Page
       </h2>
@@ -47,13 +123,21 @@
       </p>
     </section>
 
-    <section>
+    <section id="about">
       <h2>
         About Me Page
       </h2>
       <h3>
         Christopher Hanson
       </h3>
+      <figure>
+        <img src="images/diamond.png" alt="Diamond Rank Icon League of Legends" height="325px">
+        <figcaption>My rank icon in League of Legends, a game I play often.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/UNCC.jpg" alt="Me With the UNCC League of Legends Team in 2019">
+        <figcaption>Me With the UNCC League of Legends Team in 2019</figcaption>
+      </figure>
       <p>
         I'm Chris Hanson and I started playing video games when I was a freshman in highschool over 8 years ago.
         I'm currently 23 years old and I'm still obsessed with every game I get my hands on. There's not much else I
@@ -67,7 +151,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="time">
       <h2>
         Best Time to Play
       </h2>
@@ -80,10 +164,20 @@
         There's so much to explore given even the most limited schedule. There's games for every type of person, from
         quick mobile games, to deep
         and extensive fantasy worlds with in-depth story lines and deep character arcs for those who have more time.
+        <br>
+        <strong>Here's some of my favorite games download links:</strong><br>
+        <a href="https://www.leagueoflegends.com/en-us/">Click to go to League of Legends Homepage</a>
+        <br>
+        <strong>Sign up by clicking the image below!</strong>
+        <br>
+      <figure>
+        <a href="https://signup.na.leagueoflegends.com/en/signup/index"><img src="images/play_now.png"></a>
+        <figcaption>Sign up for League of Legends!</figcaption>
+      </figure>
       </p>
     </section>
 
-    <section>
+    <section id="download">
       <h2>
         Where to Download
       </h2>
@@ -91,12 +185,41 @@
         Plenty of Different Places
       </h3>
       <p>
-        Hello and welcome to my ITIS 3135 course website! Feel free to browse the website through any of the
-        provided hyperlinks in the header and footer.
+        Click any of the images below to be taken to the download links to the major games I love to play!
+      </p>
+      <figure>
+        <a href="https://signup.na.leagueoflegends.com/en/signup/redownload"><img src="images/login.png"></a>
+      </figure>
+      <figcaption>League of Legends Client Download</figcaption>
+      <figure>
+        <a href="https://www.blizzard.com/en-us/download/confirmation?product=bnetdesk&platform=windows"><img
+            src="images/battle.png"></a>
+      </figure>
+      <figcaption>Battle.net Client Download</figcaption>
+      <figure>
+        <a href="https://store.steampowered.com/"><img src="images/steam.png"></a>
+      </figure>
+      <figcaption>Steam Download</figcaption>
+      <p>
+        These are some of my favorite games to play, they include the following:
+      <ul>
+        <li>
+          League of Legends
+        </li>
+        <li>
+          World of Warcraft
+        </li>
+        <li>
+          Hearthstone
+        </li>
+        <li>
+          All games on Steam platforms!
+        </li>
+      </ul>
       </p>
     </section>
 
-    <section>
+    <section id="how">
       <h2>
         How to Play Page
       </h2>
@@ -104,12 +227,35 @@
         Tutorials
       </h3>
       <p>
-        Hello and welcome to my ITIS 3135 course website! Feel free to browse the website through any of the
-        provided hyperlinks in the header and footer.
+        Every game will provide a variety of different tutorial options, I'll show you how to access the league of
+        legends tutorial.
       </p>
+      <ol>
+        <li>
+          Download the client and sign up
+        </li>
+        <li>
+          Once logged into the client, a tutorial option should pop up, like the image below.
+          <figure>
+            <img src="images/tutorial.png">
+            <figcaption>
+              Tutorial Button
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          Confirm and enter tutorial!
+          <figure>
+            <img src="images/confirm.png">
+            <figcaption>
+              Confirm & Enter
+            </figcaption>
+          </figure>
+        </li>
+      </ol>
     </section>
 
-    <section>
+    <section id="why">
       <h2>
         Why Page
       </h2>
@@ -117,9 +263,30 @@
         Why not!
       </h3>
       <p>
-        Hello and welcome to my ITIS 3135 course website! Feel free to browse the website through any of the
-        provided hyperlinks in the header and footer.
+        I've met so many lifelong friends through playing video games, some of which I've actually met in person!
       </p>
+      <figure>
+        <img src="images/joe.jpg" height="600px">
+        <figcaption>
+          Me and one of my closest gaming friends meeting in person!
+        </figcaption>
+      </figure>
+      <ul>
+        <strong>Reasons to play:</strong>
+        <li>
+          Meet new people you would've never met otherwise.
+        </li>
+        <li>
+          Explore new things you might enjoy outside of real life!
+        </li>
+        <li>
+          Kill time and enjoy yourself.
+        </li>
+        <li>
+          Creating your own story and express yourself through gaming!
+        </li>
+      </ul>
+
     </section>
   </main>
   <footer>
@@ -139,7 +306,7 @@
       </script>
     </p>
     <p>
-      <a href="hansondesignsllc.net/">Designed By: Hanson Designs LLC ©2022.</a>
+      <a href="/hansondesignsllc-caramel-horse.html">Designed By: Hanson Designs LLC ©2022.</a>
     </p>
   </footer>
 </body>
