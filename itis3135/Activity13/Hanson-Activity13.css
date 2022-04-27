@@ -1,0 +1,42 @@
+html {
+	background-color: #dfe3e6;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: 25px;
+	background: #fff;
+	width: 697px;
+	margin: 15px auto 0 auto;
+}
+header {
+	height: 100px;
+	background: url('images/logo.gif') no-repeat 25px;
+}
+ main h2 {
+	font-size: 14px;
+	font-weight: bold;
+	background: #dfe3e6 url('images/bullet.gif') no-repeat 7px center;
+	padding: 3px 0 3px 20px;
+	border: solid #929ca4 1px;
+	color: #cc1c0d;
+	text-align:center;
+
+}
+
+main {
+	width: 600px;
+	float: left;
+	background-color: #fff;
+	padding-right: 15px;
+	margin: 20px;
+}
+h3 {
+	margin: 1em 0 0;
+	color: #000080;
+}
+footer {
+	height: 35px;
+	background: url('images/footer.gif');
+	clear: both;
+}
