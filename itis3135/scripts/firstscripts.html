@@ -8,9 +8,8 @@
   <title>First Scripts | Chris Hanson | ITIS 3135
   </title>
   <script src="defaultscripts.js"></script>
-  <link rel="stylesheet" href="/default.css">
+  <link rel="stylesheet" href="../default.css">
 </head>
-
 
 <body>
   <header>
@@ -18,9 +17,9 @@
       Chris Hanson
     </h1>
     <nav>
-      <a href="/index.html">Home</a>
+      <a href="../index.html">Home</a>
       ||
-      <a href="/contract.html">Contract</a>
+      <a href="../contract.html">Contract</a>
       ||
       <a href="/introduction.html">Introduction</a>
       ||
@@ -58,31 +57,26 @@
       </script>
     </h3>
 
-
-    <form name="information" onsubmit="formCheck()">
+    <form name="information" onsubmit="return formCheck()">
       <label for="name">Name:</label>
       <input type="text" id="name">
 
       <label for="doing">How are you doing?</label>
       <input type="text" id="doing">
 
-      <input type= 'submit' value="Submit">
+      <input type='submit' value="Submit">
     </form>
 
     <div id="content"></div>
 
+    <button type='button' onclick="alertUser()">Script Test</button>
 
-
-    <button type = 'button' onclick="alertUser()">Script Test</button>
-
-    <button type = 'button' onclick="getEmail()">Get Company Email</button>
-    <button type = 'button' onclick="getPhone()">Get Company Phone #</button>
-    <button type = 'button' onclick="tellJoke()">Tell a Joke</button>
-    <button type = 'button' onclick="companyOwn()">Owner of Company is</button>
-    <button type = 'button' onclick="companyAge()">How old is the Company?</button>
+    <button type='button' onclick="getEmail()">Get Company Email</button>
+    <button type='button' onclick="getPhone()">Get Company Phone #</button>
+    <button type='button' onclick="tellJoke()">Tell a Joke</button>
+    <button type='button' onclick="companyOwn()">Owner of Company is</button>
+    <button type='button' onclick="companyAge()">How old is the Company?</button>
   </main>
-
-
 
   <footer>
     <hr>
