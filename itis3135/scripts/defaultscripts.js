@@ -24,10 +24,10 @@ function getDate() {
 }
 
 function formCheck() {
-  let fname = document.forms["information"]["name"].value;
-  let mood = document.forms["information"]["doing"].value;
+  var fname = document.forms["information"]["name"].value;
+  var mood = document.forms["information"]["doing"].value;
 
-  document.getElementById("content").innerHTML = `<h1>The Caramel Horse Hanson Designs, LLC. welcomes you, ${fname}! We\'re glad you are doing ${mood}</h1>`;
+  document.getElementById("content").innerHTML += `<h1>, ${fname}! We\'re glad you are doing ${mood}</h1>`;
 }
 
 function getEmail() {
