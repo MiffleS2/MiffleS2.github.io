@@ -27,7 +27,7 @@ function formCheck() {
   var fname = document.forms["information"]["name"].value;
   var mood = document.forms["information"]["doing"].value;
 
-  document.getElementById("content").innerHTML += `<h1>, ${fname}! We\'re glad you are doing ${mood}</h1>`;
+  document.getElementById("content").innerHTML += `<h1>Welcome, ${fname}! We\'re glad you are doing ${mood}</h1>`;
   return false;
 }
 
