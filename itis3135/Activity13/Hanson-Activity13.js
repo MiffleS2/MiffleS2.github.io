@@ -13,8 +13,8 @@ $(document).ready(function () {
         success: function (data) {
             $("#team").html("");
 
-            //copied this code from the murach slides, don't know if I was allowed to but I think I was supposed to?
-            $.getJSON("team.json", function (data) { 
+
+            $.getJSON("team.json", function (data) {
                 $.each(data, function () {
                     $.each(this, function (key, value) {
                         $("#team").append(
