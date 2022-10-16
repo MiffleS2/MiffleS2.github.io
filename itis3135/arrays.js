@@ -6,10 +6,10 @@ function addSalary(e) {
   let name = document.forms["information"]["name"].value;
   let sala = document.forms["information"]["salary"].value;
 
-  if(name == ""){
+  if (name == "") {
     alert("Enter Name!")
   }
-  if(sala == ""){
+  if (sala == "") {
     alert("Enter Salary!")
   }
 
@@ -18,18 +18,12 @@ function addSalary(e) {
 }
 function displayResults() {
   let maxSal = 0;
-  let averageSal = 0;
-  let summation = 0;
-
   for (var i = 0; i < salaries.length; i++) {
-    summation += salaries[i];
-
     if (salaries[i] > maxSal) {
       maxSal = salaries[i];
     }
   }
-  averageSal = summation / salaries.length;
-  document.getElementById("results").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p> <h2>Average Salary<h2> <p>${averageSal}</p>`;
+  document.getElementById("results").innerHTML = `<h2>Highest Salary</h2> <p>${maxSal}</p>`;
 }
 function displaySalary() {
   document.getElementById("result_table").innerHTML = `<tr><th>Name</th><th>Salary</th></tr>`;
