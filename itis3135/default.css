@@ -46,6 +46,7 @@ ul{
   margin-left: auto;
   margin-right: auto;
   list-style-position: inside;
+  list-style: square;
 }
 th{
   font-family:sans-serif;
