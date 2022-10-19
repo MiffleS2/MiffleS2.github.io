@@ -6,8 +6,10 @@
 body,
 html {
   text-align: center;
-
   background-image: linear-gradient(to left top, #2eb7f7, #ece8e8);
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
   color: #3b3b3b;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
