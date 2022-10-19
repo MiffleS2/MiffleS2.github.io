@@ -16,10 +16,8 @@ function getDate() {
     "pm", "pm", "pm", "pm", "pm", "pm", "pm", "pm", "pm", "pm", "pm", "pm",
   ];
 
-
-
   document.write("Today is: " + now.getHours() + ":" + now.getMinutes()
-    + " " + ampm[now.getHours()] + " on " + days[now.getDay()] + ", " + now.getDate()
+    + " " + ampm[now.getHours()] + " on " + days[now.getDay() - 1] + ", " + now.getDate()
     + " " + months[now.getMonth()] + ", " + now.getFullYear());
 }
 

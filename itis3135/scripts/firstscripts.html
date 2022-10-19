@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="../default.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="defaultscripts.js"></script>
+  <title>Chris Hanson | Scripts</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
       <a class="navbar-brand" href="../index.html">Chris Hanson Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,26 +40,29 @@
     </nav>
   </header>
   <main>
-    <h2>
-      First Scripts
-    </h2>
-    <h3 id="currentDate">
-      <script>
-        getDate();
-      </script>
-    </h3>
+    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+      <h2>
+        Practice Scripts
+      </h2>
+      <h3 id="currentDate">
+        <script>
+          getDate();
+        </script>
+      </h3>
 
-    <form name="information" onsubmit="return formCheck()">
-      <label for="name">Name:</label>
-      <input type="text" id="name">
+      <form name="information" onsubmit="return formCheck()">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
 
-      <label for="doing">How are you doing?</label>
-      <input type="text" id="doing">
+        <label for="doing">How are you doing?</label>
+        <input type="text" id="doing">
 
-      <input type='submit' value="Submit">
-    </form>
+        <input type='submit' value="Submit">
+      </form>
 
-    <div id="content"></div>
+      <div id="content"></div>
+    </div>
+
   </main>
 
   <footer>
