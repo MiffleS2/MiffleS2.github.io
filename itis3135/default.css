@@ -6,7 +6,7 @@
 
 body, html{
   text-align: center;
-  background-color: #EFEFEF;
+  background-color: #b3e7ff;
   color: #565656;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -19,7 +19,7 @@ header, footer{
   text-align: center;
 }
 form{
-  background-color: #B38D97;
+  background-color: #fae56c;
   color: #283845;
   padding: 20px;
   display: inline-block;
