@@ -55,28 +55,30 @@
     </div>
   </main>
 
-  <footer>
-    <hr>
-    <nav>
-      <a href="https://github.com/MiffleS2" target="blank">Github</a>
-      ||
-      <a href="https://www.freecodecamp.org/chanson7" target="blank">Free Code Camp</a>
-      ||
-      <a href="https://www.linkedin.com/in/chris-hanson-3a4260139/" target="blank">LinkedIn</a>
-    </nav>
-    <p>
-      <a href="https://validator.w3.org/check?uri=" id="validation_link_html">
-        <img src="images/button_validation_html5.png" alt="Link to HTML validator">
-      </a>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="https://github.com/MiffleS2" target="blank"
+            class="nav-link px-2 text-dark">Github</a></li>
+        <li class="nav-item"><a href="https://www.freecodecamp.org/chanson7" target="blank"
+            class="nav-link px-2 text-dark">Free Code Camp</a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/chris-hanson-3a4260139/" target="blank"
+            class="nav-link px-2 text-dark">LinkedIn</a></li>
+      </ul>
+      <p class="text-center text-dark">Chris Hanson Information</p>
+  </div>
+  <a href="https://validator.w3.org/check?uri=" id="validation_link_html">
+    <img src="images/button_validation_html5.png" alt="Link to HTML validator">
+  </a>
 
-      <a href="https://jigsaw.w3.org/css-validator/check/referer?uri=" id="validation_link_css">
-        <img src="images/button_validation_css.png" alt="Link to css validator">
-      </a>
-      <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-      </script>
-    </p>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer?uri=" id="validation_link_css">
+    <img src="images/button_validation_css.png" alt="Link to css validator">
+  </a>
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+  </p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

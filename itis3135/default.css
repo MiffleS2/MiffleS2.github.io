@@ -1,36 +1,61 @@
-
-.background-brown{
+.background-brown {
   background-color: rgb(163, 136, 86);
   color: black;
 }
 
-body, html{
+body,
+html {
   text-align: center;
-  background-color: #b3e7ff;
-  color: #565656;
+
+  background-image: linear-gradient(to left top, #2eb7f7, #ece8e8);
+  color: #3b3b3b;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header, footer{
+
+header,
+footer {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.form{
+
+a:link {
+  color: rgb(116, 23, 23)
+}
+
+/* unvisited links       */
+a:visited {
+  color: rgb(162, 59, 221)
+}
+
+/* visited links         */
+a:hover,
+a:focus {
+  color: #00c
+}
+
+/* user hovers, or focus */
+a:active {
+  color: #ccc
+}
+
+.form {
   display: block;
   text-align: center;
 }
-form{
+
+form {
   background-color: #fae56c;
   color: #283845;
   padding: 20px;
   display: inline-block;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
-  text-align:left;
+  text-align: left;
 }
 
-ul{
-  font-family:sans-serif;
+ul {
+  font-family: sans-serif;
   display: table;
   text-align: left;
   margin-left: auto;
@@ -38,8 +63,9 @@ ul{
   list-style-position: inside;
   list-style: square;
 }
-th{
-  font-family:sans-serif;
+
+th {
+  font-family: sans-serif;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
@@ -47,10 +73,11 @@ th{
   text-align: center;
   padding: 7px;
   background-color: rgb(163, 136, 86);
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
-table{
-  font-family:sans-serif;
+
+table {
+  font-family: sans-serif;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
@@ -60,8 +87,9 @@ table{
   color: rgb(184, 240, 55);
   background-color: rgb(168, 74, 74);
 }
-td{
-  font-family:sans-serif;
+
+td {
+  font-family: sans-serif;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
@@ -69,8 +97,9 @@ td{
   text-align: center;
   padding: 7px;
 }
+
 table tr:nth-child(even) {
-  font-family:sans-serif;
+  font-family: sans-serif;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
@@ -80,38 +109,43 @@ table tr:nth-child(even) {
   background-color: rgb(102, 52, 52);
 }
 
-input[type=text]{
+input[type=text] {
   margin-left: auto;
   margin-right: auto;
   padding: 6px;
   background-color: rgb(238, 135, 97);
   font-family: sans-serif;
-  color:white;
+  color: white;
 }
-input[type=number]{
+
+input[type=number] {
   margin-left: auto;
   margin-right: auto;
   padding: 6px;
   background-color: rgb(238, 135, 97);
   font-family: sans-serif;
-  color:white;
+  color: white;
 }
-input[type=email]{
+
+input[type=email] {
   margin-left: auto;
   margin-right: auto;
   padding: 6px;
   background-color: rgb(238, 135, 97);
   font-family: sans-serif;
-  color:white;
+  color: white;
 }
-input[type=submit]{
+
+input[type=submit] {
   background-color: rgb(59, 59, 59);
-  color:coral;
+  color: coral;
 }
-input[type=reset]{
+
+input[type=reset] {
   background-color: rgb(59, 59, 59);
-  color:coral;
+  color: coral;
 }
+
 #slides img {
   display: none;
 }
