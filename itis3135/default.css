@@ -14,10 +14,11 @@ a:hover{
 }
 body{
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  background-color: #3D0814;
+  /*background-color: #3D0814;
   color: #BCEBCB;
+  */
+  background-color: #EFEFEF;
+  color: #565656;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header, footer{
@@ -68,6 +69,7 @@ table{
   text-align: center;
   padding: 7px;
   color: rgb(184, 240, 55);
+  background-color: rgb(168, 74, 74);
 }
 td{
   font-family:sans-serif;
