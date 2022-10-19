@@ -3,20 +3,8 @@
   background-color: rgb(163, 136, 86);
   color: black;
 }
-a{
-  color: rgb(164, 192, 111);
-}
-a:visited{
-  color:rgb(68, 180, 64);
-}
-a:hover{
-  color:rgb(86, 142, 214);
-}
 body{
   text-align: center;
-  /*background-color: #3D0814;
-  color: #BCEBCB;
-  */
   background-color: #EFEFEF;
   color: #565656;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
